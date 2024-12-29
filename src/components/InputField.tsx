@@ -9,7 +9,12 @@ interface LoginProps {
 function InputField({ inputName }: LoginProps) {
   return (
     <div>
-      <TextField id="outlined-textarea" label={inputName} multiline />
+      <TextField
+        id="outlined-textarea"
+        label={inputName}
+        multiline
+        sx={{ marginBottom: 2, width: "100%" }}
+      />
     </div>
   );
 }
