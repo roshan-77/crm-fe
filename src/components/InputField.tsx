@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import Box from "@mui/material";
+import { Checkbox, TextField, Button } from "@mui/material";
 
 interface LoginProps {
   inputName: string;
-  inputType: string;
 }
 
-function InputField({ inputName, inputType }: LoginProps) {
+function InputField({ inputName }: LoginProps) {
   return (
     <div>
-      {inputName}
-      <input type={inputType} />
+      <TextField id="outlined-textarea" label={inputName} multiline />
     </div>
   );
 }
